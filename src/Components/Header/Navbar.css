@@ -67,10 +67,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: -35px;
-    margin-left: -57px;
+    margin-top: -60px;
+    margin-left: 36px;
     border-radius: 11px;
     font-size: 14px;
     background-color: red;
     color: white;
+}
+
+.checkout{
+    background-color: #ff4141;
+    padding: 8px;
+    border-radius: 8px;
+    color: white;
+    text-align: center;
 }

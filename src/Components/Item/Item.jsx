@@ -1,5 +1,7 @@
+import { useCart } from '../../Context/UseCart'
 import './Item.css'
 function Item(props) {
+    const {addToCart} = useCart()
     return (
         <div className="item">
            <img src={props.image[0]} width={'300px'} alt="" /> 
@@ -12,7 +14,9 @@ function Item(props) {
                 $900
             </div>
            </div>
-           <button className='btn'>Add To Cart</button>
+           <button 
+            onClick={() => addToCart(props) }
+           className='btn'>Add To Cart</button>
         </div>
     )
 }
