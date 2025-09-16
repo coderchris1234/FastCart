@@ -1,5 +1,6 @@
 import Navbar from "../Components/Header/Navbar"
 import Hero from "../Components/Hero/Hero"
+import Item from "../Components/Item/Item"
 
 
 
@@ -8,6 +9,7 @@ function HomePage() {
         <div>
            <Navbar />
            <Hero />
+           <Item />
         </div>
     )
 }
