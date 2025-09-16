@@ -2,7 +2,7 @@ import './Item.css'
 function Item(props) {
     return (
         <div className="item">
-           <img src='/hero_image.png' width={'300px'} alt="" /> 
+           <img src={props.image[0]} width={'300px'} alt="" /> 
            <p>{props.title}</p>
            <div className="item-prices">
             <div className="item-price-new">
@@ -12,7 +12,7 @@ function Item(props) {
                 $900
             </div>
            </div>
-           <button>Add To Cart</button>
+           <button className='btn'>Add To Cart</button>
         </div>
     )
 }
